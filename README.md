@@ -16,6 +16,7 @@
 - Logger: Winston
 
 ## Folder structure
+<pre>
 |-- env
     |-- index.ts: load env config
 |-- src
@@ -34,6 +35,7 @@
 |-- README.md
 |-- tsconfig.json
 |-- yarn.lock
+</pre>
 
 ## How to run
 

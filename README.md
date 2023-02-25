@@ -5,7 +5,7 @@
 - Node: v16
 - Yarn: v1.22
 
-## Techical stack
+## Technical stack
 
 - API framework: Expressjs
 - Views: EJS

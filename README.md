@@ -16,18 +16,24 @@
 - Logger: Winston
 
 ## Folder structure
--- env: 
------- index.ts: load env config
--- src:
------- airtable: airtable instance to call to airtable
------- common: common constant, interface, enum, logger use in project
------- controller: define routes in project
------- model: modeling model use in project
------- repository: define repository to get data from airtable
------- service: implement the main logic 
------- validator: validator query of request
------- view: define all views in project
--- .env.dev: the env file, use dotenv library to read
+|-- env
+    |-- index.ts: load env config
+|-- src
+    |-- airtable: airtable instance to call to airtable
+    |-- common: common constant, interface, enum, logger use in project
+    |-- controller: define routes in project
+    |-- model: modeling model use in project
+    |-- repository: define repository to get data from airtable
+    |-- service: implement the main logic 
+    |-- validator: validator query of request
+    |-- view: define all views in project
+|-- .env.dev: the env file, use dotenv library to read
+|-- .gitignore
+|-- mocha-setup.ts
+|-- package.json
+|-- README.md
+|-- tsconfig.json
+|-- yarn.lock
 
 ## How to run
 

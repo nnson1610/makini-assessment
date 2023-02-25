@@ -1,0 +1,8 @@
+<%  data.forEach(item => { %>
+<li> <%= item.data.number %> </li>
+<% if (item.children && item.children.length > 0) { %>
+<ul>
+  <%- include('hierarchy_items', {data: item.children}); %>
+</ul>
+<% } %>
+<% }); %>

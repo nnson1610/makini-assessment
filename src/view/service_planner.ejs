@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Service Planners</title>
+</head>
+
+<body>
+  <ul>
+    <%  data.forEach(item => { %>
+    <p> Name: <%= item.data.name %> </p>
+    <p> Start date: <%= item.data.startDate %> </p>
+    <p> End date: <%= item.data.endDate %> </p>
+    </br></br>
+    <% }); %>
+  </ul>
+
+</body>
+
+</html>

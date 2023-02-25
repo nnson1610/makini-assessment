@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Drawings</title>
+</head>
+
+<body>
+  <ul>
+    <%  data.forEach(item => { %>
+    <li> Drawing name: <%= item.data.name %> </li>
+    <% if (item.data.model_number && item.data.model_number.length > 0) { %>
+    <p>Models</p>
+    <%  item.data.model_number.forEach(number => { %>
+    <ul>
+      <%- number %>
+    </ul>
+    <% }) %>
+    <% } %>
+  </br>
+    <% }); %>
+  </ul>
+
+</body>
+</html>
